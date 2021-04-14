@@ -1,0 +1,116 @@
+1.1 Super User:
+sudo, su
+1.2 Package Installation: 
+apt-get
+1.3 Files / Directory Basics:
+cp [with options] <-l, -a, -r, -f, -i, -v, --help>
+mv [with options] <-l, -a, -f, -i, -v, --help>
+rm [with options] <-i, -r>
+ln [with option] <-s>
+cd [with parameters] < .., dir_path, /, ~/ >
+pwd
+mkdir <-p>
+rmdir
+ls [with options] <-l, -h, -a, -R, --help>
+tree
+1.4 File viewing
+cat
+less
+head [with options] <-c, -n>
+tail [with options] <-c, -n, -f>
+more
+1.5 File properties
+stat
+wc [with options] <-c, -b, -l>
+du [with options] <-s, -h, -a>
+file
+touch [with options] <-c, -a, -m>
+chown
+chmod
+1.6 File location
+find [with options] <-P, -L, -name, -size, -perm, -user, -wholename.>
+locate
+which
+whereis
+1.7 File text identification
+grep [with options] <-n, -i, -c, -r>
+regular expression (https://www.cs.tut.fi/~jkorpela/perl/regexp.html)
+1.8 File comparison
+diff [with options] <-u, -N, -R, -i>
+comm
+cmp
+vimdiff (For vim users)
+1.9 Disk and file-system
+df <-h>
+mount [with options] <-o, -t>
+umount
+fdisk
+mkfs.ext*, mkfs.vfat, mkfs.ntfs
+1.10 Runtime level management
+exit
+reboot
+shutdown <-c, +n(where n is an integer)>
+1.11 System monitoring
+uptime
+w, who, whoami
+pstree <-p>
+top [with options] <-d, -i, -n. –p>, 1
+ps [with options] <-a, -u, -x, -e, -L>
+uname [with options] <-a, -s, -n, -r, -v, -m, -p, o>
+lsmod
+lspci [-v]
+lshw
+free
+dmesg [with options] <-c, -C, -D>
+insmod
+kill [ -SIGTERM, -SIGABRT, -SIGSEGV, -SIGKILL, -SIGHUP]
+killall
+1.12 Compressing/Uncompressing
+tar [with options] <-c, -x, -v, -f, -z, -j>
+zip
+unzip
+rar
+gzip
+bzip2
+1.13 Job scheduling
+sleep
+watch <-n>
+renice
+1.14 Miscellaneous
+man
+info
+clear
+reset
+ar <-r, -s>
+env
+export
+echo
+passwd
+pipe (|)
+redirection (<, >)
+append (>>)
+xargs
+tee
+awk
+cut
+sed
+pgrep
+1.15 Basic Networking commands
+arp
+ifconfig
+ping
+ssh
+scp
+route
+1.16 Shell variables
+PWD
+OLDPWD (used by cd -)
+PATH
+SHELL
+? (Stores return value of last executed command)
+EDITOR
+Create/Display/Clear Custom shell variables
+1.17. Shell configuration file
+.bashrc file [Alias]
+1.18 Wildcards
+*, &, /, [].
