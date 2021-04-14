@@ -1,0 +1,41 @@
+sudo - sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy. The invoking user's real (not effective) user-ID is used to determine the user name with which to query the security policy.
+
+sudo option can only be used by users who belong to the sudoers group.
+
+For a user to execute a command that requires the sudo prefix, it has to be part of the sudoers group.
+
+To add a user to the sudoers group, run the following command (as root or an account that already has sudo privileges):
+
+usermod -aG sudo [user_name]
+
+For instance, to add the account dharma, you have to type:
+
+sudo usermod -aG sudo dharma
+
+To see a list of accounts that belong to the sudoers group run:
+
+sudo getent group sudo
+
+su - su allows to run commands with a substitute user and group ID. When called without arguments, su defaults to running an interactive shell as root.
+
+
+Questions on SuperUser 
+
+1. How to switch to the root user and acquire the root environment ?
+
+-> sudo -i - switch to the root user at /root directory
+-> su - switch to the root user at present directory.
+if you get authentication failure
+use 
+-> sudo passwd root
+to set the passwd and try su
+
+2. How to switch back to default user from root user ?
+
+-> exit
+-> ctrl + d
+
+3. In which path the sudoers file is located ?
+
+-> /etc/sudoers
+
